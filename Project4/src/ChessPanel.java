@@ -1,18 +1,29 @@
 
 public class ChessPanel
 {
+	
+	private Chesspiece[][] chessPanel;
+	for(int i=0;i<8;i++) { 
+		for(int j=0;j<8;j++) chessPanel[i][j]=new Chesspiece(); }
+	
+	
+	// posì— ìžˆëŠ” ì²´ìŠ¤ë§ ë°˜í™˜, ì—†ë‹¤ë©´ null return
 	public Chesspiece getChesspiece(Vector2 pos)
 	{
 		return null;
 	}
 
-	public boolean move(Chesspiece piece, Vector2 pos)//piece°¡ pos·Î ÀÌµ¿ÇÒ¼öÀÖ´ÂÁö Ã¼Å©, ¸¸¾à °¡´ÉÇÏ´Ù¸é ÀÌµ¿½ÃÅ°°í true¹ÝÈ¯
+	public boolean move(Chesspiece piece, Vector2 pos)//pieceê°€ posë¡œ ì´ë™í• ìˆ˜ìžˆëŠ”ì§€ ì²´í¬, ë§Œì•½ ê°€ëŠ¥í•˜ë‹¤ë©´ ì´ë™ì‹œí‚¤ê³  trueë°˜í™˜
 	{
 		//CheckCheck(piece);
-return false;
+		return false;
 	}
 	
-	private boolean checkCheck(Chesspiece piece)//piece°¡ ´ÙÀ½¿¡ °¥ ¼ö ÀÖ´Â À§Ä¡¿¡ Àû Å· ÀÖ´ÂÁö ÆÇ´Ü
+	public void Move (Chesspiece chesspiece, Vector2 pos) { // chesspieceë¥¼ posë¡œ ì˜®ê¹€
+		
+	}
+	
+	private boolean checkCheck(Chesspiece piece)//pieceê°€ ë‹¤ìŒì— ê°ˆ ìˆ˜ ìžˆëŠ” ìœ„ì¹˜ì— ì  í‚¹ ìžˆëŠ”ì§€ íŒë‹¨
 	{
 		return false;
 	}
